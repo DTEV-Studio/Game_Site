@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    background-color: #0D1117;
+}audio{
+    width: 0;
+    height: 0;
+}
+.nav{
+    color: orange;
+    background-color: #26292F;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-size: 25px;
+    margin-bottom: 100px;
+}
+.Games{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.cf{
+    white-space: normal;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+.image{
+    position: relative;
+    display: inline-block;
+    float: none;
+    padding: 20px 22px;
+}
+.img{
+    display: block;
+    width: 100%;
+}
+.img_overlay{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.img_overlay > *{
+    transform: translateY(25px);
+    transition: transform 0.25s;
+}
+.img_overlay:hover{
+    opacity: 1;
+}
+.img_overlay:hover > *{
+    transform: translateY(0px);
+}
+.img_title{
+    font-size: 2em;
+    font-weight: bold;
+}
+.img_description{
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
