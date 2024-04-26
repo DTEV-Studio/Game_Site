@@ -1,6 +1,10 @@
 // Audio button functionality
 const audioButton = document.getElementById('toggleAudio');
-let audioFiles = ['./audio/theme1.mp3', './audio/theme2.mp3', './audio/theme3.mp3']; // Replace with your audio files
+let audioFiles = [
+    './audio/theme1.mp3', './audio/theme2.mp3', './audio/theme3.mp3',
+    './audio/theme4.mp3', './audio/theme5.mp3', './audio/theme6.mp3',
+    './audio/theme7.mp3', './audio/theme8.mp3', './audio/theme9.mp3'
+                ];
 let currentAudioIndex = Math.floor(Math.random() * audioFiles.length); // Generate a random index
 let audio = new Audio(audioFiles[currentAudioIndex]);
 // Decrease the volume by 80%
